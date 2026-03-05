@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,7 +12,87 @@
     </nav>
 
     <h1>Sign Up Form</h1>
- 
 
+    <form action="../results.html" method="GET">
+      <fieldset>
+        <legend>Demographic Information</legend>
+
+        <label>
+          Full Name
+          <input type="text" placeholder="Enter your name" name="fullname" />
+        </label>
+
+        <br />
+
+        <label>
+          Sex
+          <select name="sex">
+            <option value="1">male</option>
+            <option value="2">female</option>
+            <option value="3">other</option>
+          </select>
+        </label>
+
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>Contact Information</legend>
+
+        <label>
+          Email
+          <input type="email" name="email" />
+        </label>
+
+        <br />
+
+        <label>
+          County
+          <input list="counties" name="county" />
+          <datalist id="counties">
+            <option value="Caroni" />
+            <option value="Mayaro" />
+            <option value="Nariva" />
+            <option value="Saint Andrew" />
+            <option value="Saint David" />
+            <option value="Saint George" />
+            <option value="Saint Patrick" />
+            <option value="Victoria" />
+          </datalist>
+        </label>
+
+        <br />
+
+        <label>
+          Telephone
+          <input type="tel" name="telephone" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Courses</legend>
+        <label>
+          <input type="checkbox" name="course" value="info1601" checked />
+          <span> INFO 1601</span>
+        </label>
+
+        <label>
+          <input type="checkbox" name="courses" value="comp1602" />
+          <span>COMP 1602</span>
+        </label>
+
+        <label>
+          <input type="checkbox" name="courses" value="comp1603" />
+          <span>COMP 1603</span>
+        </label>
+
+        <label>
+          <input type="checkbox" name="courses" value="comp1604" />
+          <span>COMP 1604</span>
+        </label>
+      </fieldset>
+
+      <br />
+      <input type="submit" value="signup" />
+    </form>
   </body>
 </html>
